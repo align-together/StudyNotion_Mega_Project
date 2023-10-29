@@ -6,7 +6,7 @@ StudyNotion aims to provide:
 more accessible and engaging.
 − A platform for instructors to showcase their expertise and connect with learners
 across the globe.
-In the following sections, we will cover the technical details of the platform, including:
+In the following sections, it covers the technical details of the platform, including:
 1. System architecture: The high-level overview of the platform's components and
 diagrams of the architecture.
 2. Front-end: The description of the front-end architecture, user interface design,
