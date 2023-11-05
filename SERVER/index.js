@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express();
+var cors = require('cors');
+
+// use it before all route definitions
+app.use(cors({origin: 'http://localhost:8888'}));
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
