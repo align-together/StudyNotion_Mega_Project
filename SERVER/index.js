@@ -11,7 +11,6 @@ const courseRoutes = require("./routes/Course");
 const paymentRoutes = require("./routes/Payments");
 
 const databse = require("./config/database");
-const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
