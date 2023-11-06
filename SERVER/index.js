@@ -3,7 +3,6 @@ const app = express();
 var cors = require('cors');
 
 // use it before all route definitions
-app.use(cors({origin: 'http://localhost:8888'}));
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
@@ -44,7 +43,7 @@ cloudinaryConnect();
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
