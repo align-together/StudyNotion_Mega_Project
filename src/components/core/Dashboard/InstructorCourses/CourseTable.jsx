@@ -8,17 +8,17 @@ import {
   deleteCourse,
   fetchInstructorCourses,
 } from "../../../../services/operations/courseDetailsAPI";
-import { setCourse } from "../../../../slices/courseSlice";
+// import { setCourse } from "../../../../slices/courseSlice";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import { useNavigate } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
 import { FiEdit2 } from "react-icons/fi";
 import { HiClock } from "react-icons/hi";
-import { RiDeleteBin6Line } from "react-icons/ri";
+// import { RiDeleteBin6Line } from "react-icons/ri";
 import { formatDate } from "../../../../services/formatDate";
 
 const CourseTable = ({ courses, setCourses }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const navigate = useNavigate();
   const { token } = useSelector((state) => state.auth);
   const [loading, setLoading] = useState(false);
@@ -72,7 +72,7 @@ const CourseTable = ({ courses, setCourses }) => {
               >
                 <Td className="flex flex-1 gap-x-4">
                   <img
-                    src={course?.thumbnail}
+                    src={course?.thumbnail} alt="thumbnail"
                     className=" h-[150px] w-[220px] rounded-lg object-cover"
                   />
                   <div className="flex flex-col justify-between">

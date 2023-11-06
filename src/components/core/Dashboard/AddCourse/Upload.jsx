@@ -15,7 +15,6 @@ const Upload = ({
   viewData = null,
   editData = null,
 }) => {
-  const { course } = useSelector((state) => state.course);
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewSource, setPreviewSource] = useState(
     viewData ? viewData : editData ? editData : ""

@@ -30,9 +30,9 @@ const About = () => {
                 <div className="sm:h-[70px] lg:h-[150px]"></div>
 
                 <div className="absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5">
-                  <img src={BannerImage1} className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
-                  <img src={BannerImage2} className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
-                  <img src={BannerImage3 } className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
+                  <img src={BannerImage1} alt='banner' className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
+                  <img src={BannerImage2} alt='banner' className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
+                  <img src={BannerImage3 } alt='banner' className='shadow-blue-200 shadow-[0px_0px_30px_0px]'/>
                 </div>
             </div>
         </section>
@@ -111,7 +111,7 @@ const About = () => {
 
         <section className="mx-auto mt-20 flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-white">
           <div className=''>
-            <h2 className='flex items-center justify-center text-3xl mx-auto'>Reviews from other Learners</h2>
+            <h2 className='md:flex items-center justify-center text-3xl mx-auto hidden '>Reviews from other Learners</h2>
             {/* <ReviewSlider/> */}
             <ReviewSlider />
           </div>

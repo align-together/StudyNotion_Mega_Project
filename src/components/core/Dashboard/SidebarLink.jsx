@@ -6,9 +6,9 @@ import { NavLink, matchPath, useLocation } from "react-router-dom";
 // import { resetCourseState } from "../../../slices/courseSlice"
 
 export default function SidebarLink({ link, iconName }) {
-  const Icon = Icons[iconName];
+  // const Icon = Icons[iconName];
   const location = useLocation();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const matchRoute = (route) => {
     return matchPath({ path: route }, location.pathname);

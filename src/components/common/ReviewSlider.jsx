@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay, FreeMode } from "swiper/modules";
+import {  Pagination, Autoplay, FreeMode } from "swiper/modules";
 import ReactStars from "react-rating-stars-component";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -33,10 +33,11 @@ const ReviewSlider = () => {
     fetchAllReviews();
   }, []);
   return (
-    <div className="text-white">
-      <div className="my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">
+    <div className="text-white mt-10">
+      <div className="my-[50px] h-[250px]  hidden md:flex items-center justify-center lg:max-w-maxContent">
         <Swiper
           slidesPerView={4}
+          
           spaceBetween={25}
           loop={true}
           freeMode={true}
@@ -45,12 +46,12 @@ const ReviewSlider = () => {
             disableOnInteraction: false,
           }}
           modules={[FreeMode, Pagination, Autoplay]}
-          className="w-full "
+          className="w-full  "
         >
           {reviews.map((review, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="flex flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25">
+                <div className="flex flex-col   gap-3 bg-richblack-800 p-3 min-h-[200px] text-[14px] text-richblack-25">
                   <div className="flex items-center gap-4">
                     <img
                       src={

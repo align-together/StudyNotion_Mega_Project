@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Form, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import IconBtn from '../../../../common/IconBtn'
 import { resetCourseState, setStep } from '../../../../../slices/courseSlice'

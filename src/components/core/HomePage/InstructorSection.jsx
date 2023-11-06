@@ -8,7 +8,7 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs";
 const InstructorSection = () => {
   return (
     <div className=" mt-16">
-      <div className="flex flex-row gap-20 items-center ">
+      <div className="flex lg:flex-row flex-col gap-20 items-center ">
         <div className="w-[50%] shadow-[10px_-5px_50px_-5px] shadow-blue-200">
           <img
             src={InstructorImage}

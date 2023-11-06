@@ -8,9 +8,7 @@ import {HiShoppingCart} from "react-icons/hi"
 import ProfileDropdown from "../core/Auth/ProfileDropdown";
 import { apiConnector } from "../../services/apiConnector";
 import { categories } from "../../services/api";
-import {AiOutlineDownCircle} from "react-icons/ai"
-import { fetchCourseCategories } from "../../services/operations/courseDetailsAPI";
-import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
+import { AiOutlineMenu,  } from "react-icons/ai"
 
 import {BsChevronDown} from "react-icons/bs"
 import { ACCOUNT_TYPE } from "../../utils/constants";
@@ -60,13 +58,13 @@ const Navbar = () => {
 
   return (
     <div className="flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700 ">
-      <div className="flex w-11/12 max-w-maxContent items-center justify-between">
+      <div className="flex w-11/12 max-w-maxContent items-center flex-wrap gap-y-16 justify-between">
         <Link to="/">
-          <img src={logo} width={160} height={42} loading="lazy" />
+          <img src={logo} width={160} height={42} alt="logo" loading="lazy" />
         </Link>
 
         <nav>
-          <ul className="flex gap-x-6 text-richblack-5">
+          <ul className="flex gap-x-6 text-richblack-5 flex-wrap">
             {NavbarLinks.map((link, index) => {
               return (
                 <li key={index}>

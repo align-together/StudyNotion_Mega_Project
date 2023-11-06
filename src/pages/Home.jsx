@@ -121,7 +121,7 @@ const Home = () => {
         <div className=" homepage_bg h-[333px]">
           <div className=" w-11/12 max-w-maxContent flex items-center flex-col justify-between  gap-5 mx-auto">
             <div className="h-[150px]"></div>
-            <div className="flex flex-row items-center gap-7 text-white">
+            <div className="flex flex-wrap flex-row items-center gap-7 text-white">
               <CTAButton active={true} linkto={"/signup"}>
                 <div className="flex items-center gap-2">
                   Explore Full Catalog
@@ -137,7 +137,7 @@ const Home = () => {
         </div>
 
         <div className=" mx-auto w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-7">
-          <div className="flex flex-row gap-20 mb-10 mt-[100px]">
+          <div className="flex flex-col  items-center lg:flex-row gap-20 mb-10 mt-[100px]">
             <div className=" text-4xl font-semibold w-[45%]">
               Get the skills You need for about
               <HighlightText text={"Job that is in  demand"} />
@@ -165,7 +165,7 @@ const Home = () => {
       <div className=" w-11/12 mx-auto max-w-maxContent flex-col items-center justify-between gap-8 first-letter bg-richblack-900 text-white">
         <InstructorSection />
 
-        <h2 className=" text-center text-4xl font-semibold mt-10 text-white">
+        <h2 className=" text-center text-4xl font-semibold mt-10 md:block hidden text-white">
           Reviews from other learners
         </h2>
 
